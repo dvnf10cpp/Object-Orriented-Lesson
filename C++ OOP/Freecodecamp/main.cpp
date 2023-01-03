@@ -124,25 +124,25 @@ public:
         if(language == "Java"){
             task = "build application";
         }
-        if(language == "C#"){
+        else if(language == "C#"){
             task = "build game application";
         }
-        if(language == "Java"){
+        else if(language == "Java"){
             task = "build dekstop application";
         }
-        if(language == "C"){
+        else if(language == "C"){
             task = "build embedded system";
         }
-        if(language == "Kotlin"){
+        else if(language == "Kotlin"){
             task = "build mobile appliaction";
         }
-        if(language == "C++"){
+        else if(language == "C++"){
             task = "build efficient game and dekstop app";
         }
-        if(language == "Python"){
+        else if(language == "Python"){
             task = "build an AI";
         }
-        if(language == "Javascript"){
+        else if(language == "Javascript"){
             task = "build web application";
         }
         cout << this->name << " has learned " << language << " language" << endl;
