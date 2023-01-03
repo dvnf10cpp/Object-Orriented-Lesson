@@ -113,8 +113,11 @@ public:
             cout << this->name << " has learned " << numbers << " language" << endl;
             cout << "With that many language he learned" << endl;
             cout << "He's able to perfom many task!" << endl;
-        } else {
+        } else if(numbers == 1){
             cout << this->name << " has learned only " << numbers << " languages" << endl;
+        } else{
+            cout << this->name << " hasnt learned any language yet" << endl;
+            cout << "but for some reason, he's a programmer, hmmm. sus" << endl;
         }
 
     }
