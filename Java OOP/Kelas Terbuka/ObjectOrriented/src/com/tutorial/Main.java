@@ -1,5 +1,3 @@
-package com.tutorial;
-
 //CODE BASE
 //Penerapan Constructor 04 dan basic OOP
 class Main04{
@@ -61,7 +59,7 @@ class Main10{
     int getExperience(){
         return this.experience;
     }
-    void setExperience(){
+    void setExperience(int experience){
         this.experience = experience;
     }
 }
