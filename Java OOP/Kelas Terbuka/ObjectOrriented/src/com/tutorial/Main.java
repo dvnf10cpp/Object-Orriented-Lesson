@@ -1,5 +1,4 @@
-
-
+package com.basecode;
 import java.util.ArrayList;
 //Import class dari folder lain : 
 import com.terminal.Console;
