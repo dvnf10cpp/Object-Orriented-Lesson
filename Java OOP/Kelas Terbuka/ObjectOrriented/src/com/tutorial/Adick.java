@@ -1,4 +1,4 @@
-
+package com.basecode;
 
 public class Adick {
     private String name;
