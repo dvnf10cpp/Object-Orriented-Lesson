@@ -1,4 +1,4 @@
-
+package com.basecode;
 
 class Player{
     //Atribut yang diencapsulasi:
