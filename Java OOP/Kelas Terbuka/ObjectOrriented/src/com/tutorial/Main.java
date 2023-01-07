@@ -79,13 +79,12 @@ class Main13{
         totalStd++;
     }
 
-    void introMain13(){
-        System.out.printf("Halo, nama saya %s\n",this.name);
-        System.out.printf("Saya merupakan mahasiswa %s\n\n",this.University);
+    void sayHello(){
+        System.out.printf("Hello, my name is %s",this.name);
     }
 
-    void setUniversity(String University){
-        this.University = University;
+    static void setUniversity(String University){
+        Main13.University = University;
     }
 
     //Static Method akan terjadi compile error ketika diganti menjadi non static
@@ -112,11 +111,7 @@ public class Main{
     static void demoStaticAtribute(){
         Main13 stdMain13_01 = new Main13("Wawa");
         Main13 stdMain13_02 = new Main13("Dada");
-        stdMain13_01.introMain13();
-        stdMain13_02.introMain13();
-        stdMain13_01.setUniversity("Universitas Indonesia");
-        stdMain13_01.introMain13();
-        stdMain13_02.introMain13();
+        Main13.setUniversity("Universitas Indonesia");
     }
 
     static void demoStaticMethod(){
