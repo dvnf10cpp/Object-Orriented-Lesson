@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 //CODE BASE
 //Penerapan Constructor 04 dan basic OOP
 class Main04{
@@ -64,26 +66,90 @@ class Main10{
     }
 }
 
+//Penerapan Static Atribute and Method
+class Main13{
+    private static String University = "Universitas Brawijaya"; //-Static Atribute
+    private static ArrayList<String> studentList = new ArrayList<>(); //-Static Atribute
+    private static int totalStd = 0;
+    private String name;
+
+    Main13(String name){
+        this.name = name;
+        Main13.studentList.add(name);
+        totalStd++;
+    }
+
+    void introMain13(){
+        System.out.printf("Halo, nama saya %s\n",this.name);
+        System.out.printf("Saya merupakan mahasiswa %s\n\n",this.University);
+    }
+
+    void setUniversity(String University){
+        this.University = University;
+    }
+
+    //Static Method akan terjadi compile error ketika diganti menjadi non static
+    //karena static method mengakses static atribut
+    static void displayUniversity(){
+        System.out.printf("Ini adalah %s\n",Main13.University);
+        System.out.printf("Ada %d jumlah mahasiswa di %s\n",Main13.totalStd,Main13.University);
+    }
+
+    static void displayStudents(){
+        //Bisa dibuat for loop ketika ingin ditampilkan dlm bentuk tabel
+        System.out.printf("%s\n",studentList);
+    }
+}
+
 public class Main{
     public static void main(String[]args){
+        demoStaticMethod();
+        
+    }
+
+    //Demonstrasi dari penerapan dimasukkan kedalam method.
+
+    static void demoStaticAtribute(){
+        Main13 stdMain13_01 = new Main13("Wawa");
+        Main13 stdMain13_02 = new Main13("Dada");
+        stdMain13_01.introMain13();
+        stdMain13_02.introMain13();
+        stdMain13_01.setUniversity("Universitas Indonesia");
+        stdMain13_01.introMain13();
+        stdMain13_02.introMain13();
+    }
+
+    static void demoStaticMethod(){
+        Main13 stdMain13_01 = new Main13("Wawa");
+        Main13 stdMain13_02 = new Main13("Dada");
+        Main13 stdMain13_03 = new Main13("Foo");
+
+        Main13.displayUniversity();
+        Main13.displayStudents();
+    }
+
+    static void demoConstructor(){
         //Demo Constructor
         Main04 main04 = new Main04("Main 04","Computer Science",18);
-        // System.out.println(main04.name); -- Membaca Data
-        // main04.name = "Main 09" -- Menulis Data
+        main04.introMain04();
+        System.out.println(main04.name); //-- Membaca Data
+        main04.name = "Main 09"; //-- Menulis Data
+        System.out.println(main04.name);
+    }
 
-        //Demo Class Function
-        // main04.introMain04();
-
+    static void demoReference(){
         //Demo Reference Object
+        Main04 main04 = new Main04("Main 04","Computer Science",18);
         Main04 main05 = main04;
-        // main05.introMain04();
+        main05.introMain04();
         //Pada assignment main05, ketika merubah sesuatu pada main05, 
         //Maka main04 ikut berubah karena adressnya yang sama atau reference
         //Contoh
-        // main05.major = "Engineering"; 
-        // main04.introMain04();
-        //==============================================================
-        //==============================================================
+        main05.major = "Engineering"; 
+        main04.introMain04();
+    }
+
+    static void demoGetterAndSetter(){
         //Demo Getter and Setter
         Main10 main10 = new Main10("Main 10","C++",5);
         System.out.printf("Get Name     : %s\n",main10.getName());
