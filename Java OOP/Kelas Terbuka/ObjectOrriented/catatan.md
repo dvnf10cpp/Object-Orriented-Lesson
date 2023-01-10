@@ -17,4 +17,16 @@ public : atribut atau method bisa diakses diluar class
 protected : atribut atau method hanya bisa diakses ketika satu package atau subclass dari superclass
 private : atribut atau method hanya bisa diakses dalam class itu sendiri
 
-Encapsulasi : Konsep OOP dimana kita mengikat atribut didalam class dengan method yang bisa mengolah data atribut tersebut dengan tujuan untuk menghindari class lain mengakses data dari class secara langsung
+Encapsulasi : Konsep OOP dimana kita mengikat atribut didalam class dengan method yang bisa mengolah data atribut tersebut dengan tujuan untuk menghindari class lain mengakses atau melakukan modifikasi data dari class secara langsung
+Ada 2 method dalam encapsulasi, getter dan setter.
+Getter method adalah method yang melakukan return value dari atribut sebuah class
+Setter method adalah method yang akan menetapkan value atribut dengan argumen yang diterima dari method tersebut.
+
+Static dalam java sesuai pengertiannya "tidak berubah" yang berarti semua objek memiliki static variabel dengan value yang sama karena static variabel atau method merupakan milik kelas bukan objek spesifik tertentu.
+TLDR : Static = milik class bukan spesifik objek 
+Static atribut hanya bisa diakses dengan static method.
+Main method pada java dibuat static supaya jvm bisa memanggil method tersebut tanpa harus menginstansiasi objek terlebih dahulu
+
+Overloading method : 2 atau lebih method dengan nama yang sama tetapi mempunyai argumen yang berbeda-beda atau return value yang berbeda
+
+
