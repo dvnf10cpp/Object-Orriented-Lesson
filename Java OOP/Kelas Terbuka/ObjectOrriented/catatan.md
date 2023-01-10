@@ -29,4 +29,7 @@ Main method pada java dibuat static supaya jvm bisa memanggil method tersebut ta
 
 Overloading method : 2 atau lebih method dengan nama yang sama tetapi mempunyai argumen yang berbeda-beda atau return value yang berbeda
 
+Overriding method : menimpa method dengan nama yang sama yang ada di parent class/super class
+
+Inheritance == Warisan(Catatan Lebih lengkap bisa dilihat di CPP OOP)
 
