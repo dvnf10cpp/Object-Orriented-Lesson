@@ -1,8 +1,48 @@
 package com.polymorphism;
 
+import java.util.Scanner;
+
 public class MainPolymorph {
     public static void main(String[] args) {
-        demoDownCasting();
+        demoPoly4();
+    }
+
+    static void demoPoly4(){
+        //Deklarasi Objek
+        HeroParent player;
+
+        System.out.println("======== Mock Demo ========");
+        System.out.println("Ada 3 Role Hero, pilih 1");
+        System.out.println("1. Agility");
+        System.out.println("2. Intel");
+        System.out.println("3. Strength");
+        System.out.print("Masukkan nama : ");
+        String inputName = in.nextLine();
+        System.out.print("Masukkan role : ");
+        String inputRole = in.nextLine();
+        switch(inputRole.toUpperCase()){
+            case "AGILITY":
+                player = new HeroAgility(inputName);
+                break;
+            case "INTEL":
+                player = new HeroIntel(inputName);
+                break;
+            case "Strength":
+                player = new HeroStrength(inputName);
+                break;
+            default:
+                player = new HeroParent(inputName);
+        }
+        System.out.println(player);
+        
+    }
+
+    static void demoPoly3(){
+        //Upcasting saat instansiasi
+        HeroParent heroP = new HeroIntel("null");
+        // HeroIntel heroI = new HeroParent("null"); //- Tidak bisa dilakukan
+        //HeroParent is not a HeroIntel but HeroIntel is a HeroParent
+        System.out.println(heroP);
     }
 
     static void demoDownCasting(){
@@ -75,4 +115,6 @@ public class MainPolymorph {
         //Sedangkan kode dibawah tidak menunjukkan compiler error
         heroS.showStrength();
     }
+
+    static Scanner in = new Scanner(System.in);
 }
