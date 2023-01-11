@@ -21,15 +21,15 @@ Polymorphism: <br />
        * Allows methods to take on many different forms. <br />
        * Be sure that you are calling the correct form of the method. <br />
        * There are two types of polymorphism: <br />
-            ** Dynamic polymorphism: <br />
-                    - Occurs during the runtime of the program. <br />
+            1) Dynamic polymorphism: <br />
+                - Occurs during the runtime of the program. <br />
                 - Describes when a method signature is in both subclass and a superclass. <br />
                 - The methods share the same name but have different implementation. <br />
-                    - The implementation of the subclass that the object is an instance of <br />
+                - The implementation of the subclass that the object is an instance of <br />
                     overrides that of the superclass. <br />
-                ** Static polymorphism: <br />
-                    -  Occurs during compile-time rather than during runtime. <br />
-                    -  Refers to when multiply methods with the same name but different arguments <br />
-                       are defined in the same class. <br />
-                    -  The parameters are different type or taken in different order. <br />
-                    -  This is known as method overloading. <br />
+             2) Static polymorphism: <br />
+                -  Occurs during compile-time rather than during runtime. <br />
+                -  Refers to when multiply methods with the same name but different arguments <br />
+                   are defined in the same class. <br />
+                -  The parameters are different type or taken in different order. <br />
+                -  This is known as method overloading. <br />
