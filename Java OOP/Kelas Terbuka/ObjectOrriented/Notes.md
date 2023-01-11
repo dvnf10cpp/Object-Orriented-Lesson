@@ -1,3 +1,6 @@
+## Catatan Pemrograman Berorientasi Objek
+## Kelas Terbuka, Java
+
 Class adalah template untuk objek
 Objek adalah sebuah wujud hasil dari class
 
@@ -32,4 +35,24 @@ Overloading method : 2 atau lebih method dengan nama yang sama tetapi mempunyai 
 Overriding method : menimpa method dengan nama yang sama yang ada di parent class/super class
 
 Inheritance == Warisan(Catatan Lebih lengkap bisa dilihat di CPP OOP)
+Inheritance juga berarti objek dari sebuah class "is a" object dari class yang lain
+Contoh : 
+    Superclass : Kendaraan 
+    Subclass : Car (lebih spesifik)
 
+Polymorphism == Banyak Bentuk
+Poly = Banyak, Morph = Bentuk
+
+Keyword : 
+    Final   : Atribute/Method yang memiliki keyword final tidak bisa diubah dan dioverride, 
+              tetapi bisa dioverload.
+    Public  : Atribute/Method terbuka untuk semua class dari luar
+    Private : Atribute/Method hanya bisa diakses oleh class itu sendiri
+
+Ketika ada method superclass yang memiliki keyword public (bukan default), maka saat override didalam subclass,
+method subclass juga harus memiliki keyword public
+Visibility :
+    1. Jika ada method atau atribute dgn keyword public didalam superclass secara explisit alias bukan default
+       maka subclass tidak boleh mengurangi visibility dan harus mengikuti superclass (Visibility harus sama dengan superclass)
+    2. Jika ada method atau atribute dgn keyword private didalam superclass, maka subclass tidak dapat mengaksesnya.
+       Jika ingin mengakses atribut/method superclass yang private maka harus dibuat ulang di subclass
