@@ -2,12 +2,12 @@
 ## Kelas Terbuka, Java
 
 Class adalah template untuk objek
-Objek adalah sebuah wujud hasil dari class
+Objek adalah sebuah wujud hasil dari class  
 
-Sebuah objek memiliki atribut(data member) dan method(data function)
+Sebuah objek memiliki atribut(data member) dan method(data function)  
 
 Instansiasi adalah proses pembuatan suatu objek dari sebuah class
-Contoh Student student1 = new Student();
+Contoh Student student1 = new Student();  
 
 Constructor adalah method yang pertama kali di panggil saat kita melakukan instansiasi dan nama method dari sebuah constructor adalah nama dari class itu sendiri
 
@@ -32,7 +32,7 @@ Main method pada java dibuat static supaya jvm bisa memanggil method tersebut ta
 
 Overloading method : 2 atau lebih method dengan nama yang sama tetapi mempunyai argumen yang berbeda-beda atau return value yang berbeda
 
-Overriding method : menimpa method dengan nama yang sama yang ada di parent class/super class
+Overriding method : menimpa method dengan nama yang sama yang ada di parent class/super class  
 
 Inheritance == Warisan(Catatan Lebih lengkap bisa dilihat di CPP OOP)
 Inheritance juga berarti objek dari sebuah class "is a" object dari class yang lain
