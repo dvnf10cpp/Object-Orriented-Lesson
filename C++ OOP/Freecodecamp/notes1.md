@@ -8,7 +8,7 @@ OOP digunakan untuk mengelompokkan data dan fungsi yang saling berkaitan.
 - Polymorphism
 - Inheritance
 
-Gunakan Ref(&) dalam argumen void di class ketika oop cpp
+Gunakan Ref(&) dalam argumen void di class ketika oop cpp.(Pass Reference)
 
 Access Modifier : 
 - Private : hanya bisa diakses didalam class 
