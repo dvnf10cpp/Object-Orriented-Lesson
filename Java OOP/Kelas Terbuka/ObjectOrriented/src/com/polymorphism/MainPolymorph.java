@@ -2,6 +2,39 @@ package com.polymorphism;
 
 public class MainPolymorph {
     public static void main(String[] args) {
+        demoDownCasting();
+    }
+
+    static void demoDownCasting(){
+        HeroParent heroP = new HeroParent("Parent-1");
+        System.out.println(heroP);
+        //Tidak bisa melakukan downcasting dari superclass ke subclass
+        //Akan terjadi runtime error
+        // HeroAgility heroA = (HeroAgility) heroP; //- Direct DownCasting -RUNTIME ERROR
+
+        //Percobaan dari Agility ke Parent, Balikan Parent ke Agility
+        //Indirect DownCasting
+        HeroAgility heroA = new HeroAgility("Agility-1");
+        HeroParent heroR = (HeroParent) heroA;
+        HeroAgility heroL = (HeroAgility) heroR;
+        heroL.showAgility();
+        System.out.println(heroL);
+        //Status : 201(OK)
+        //Kesimpulan : Downcasting hanya bisa dilakukan ketika sudah di upcasting dari class yang sama dengan
+        //downcasting, tetapi tidak bisa direct downcasting.
+    }
+
+    static void demoUpCasting(){
+        HeroIntel heroI = new HeroIntel("Intel-1");
+        //Objek yang diupcasting tidak bisa mengakses atribut / method spesifik yang ada di subclass lagi
+        //Jadinya dia kehilangan akses ke atribut / method di subclass yang tidak dimiliki superclass 
+        //alias class yang diupcast
+        HeroParent heroP = (HeroParent) heroI; //-UpCasting
+        // heroP.intel(); --TIDAK BISA
+        System.out.println(heroP);
+    }
+
+    static void demoPoly(){
         HeroParent heroP = new HeroParent("Odin");
         HeroStrength heroS = new HeroStrength("Thor");
         HeroIntel heroI = new HeroIntel("Loki");
@@ -29,6 +62,7 @@ public class MainPolymorph {
         //   Karena saat objek subclass dimasukan ke superclass array, maka objek
         //   Subclass tersebut dianggap sebagai superclass alias berlaku casting
 
+        //Pada Proses ini, terjadilah upcasting
         HeroParent[] heroes = new HeroParent[4];
         heroes[0] = heroP;
         heroes[1] = heroS;
