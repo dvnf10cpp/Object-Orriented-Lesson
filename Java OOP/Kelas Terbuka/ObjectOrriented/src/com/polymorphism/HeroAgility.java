@@ -7,6 +7,10 @@ public class HeroAgility extends HeroParent {
         super(name);
     }
 
+    void showAgility(){
+        System.out.println("I'm Agility");
+    }
+
     public String toString(){
         return super.toString()
         + "Type : " + this.type + "\n";
