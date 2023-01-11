@@ -60,7 +60,9 @@ Overriding juga bisa disebut Runtime Polymorphism karena method dipanggil saat r
 Perbedaan Compile Time dan Runtime : <br/>
 Compile Time adalah Proses yang pertama kali terjadi <br/>
 Runtime adlaah Proses yang kedua setelah proses pertama <br/>
-Contoh Kasusnya adalah ketika kita run C++ source code kita memberikan source code kita ke program yang biasanya dipanggil compiler dalam contoh yang kita gunakan, compiler tersebut berupa G++. Lalu Program ini akan menghasilkan sebuah file executeable. Proses ini merupakan Compile Time. <br\>
+<br/>
+Contoh Kasusnya adalah ketika kita run C++ source code kita memberikan source code kita ke program yang biasanya dipanggil compiler dalam contoh yang kita gunakan, compiler tersebut berupa G++.<br/>
+Lalu Program ini akan menghasilkan sebuah file executeable. Proses ini merupakan Compile Time. <br/>
 Saat kita menjalankan file executeable, proses inilah yang merupakan Runtime. Yang mana bisa menjelaskan Runtime error seperti user melakukan input string ke tipe data int dan sebagainya.
 
 
