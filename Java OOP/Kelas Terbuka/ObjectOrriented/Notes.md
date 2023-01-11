@@ -13,46 +13,46 @@ Constructor adalah method yang pertama kali di panggil saat kita melakukan insta
 
 this keyword adalah keyword yang mengacu kepada objek saat ini dalam class. Digunakan untuk menghindari kesalahan akses antara atribut class dan argument method yang memiliki nama sama
 
-Default Keyword pada java : public
+Default Keyword pada java : public <br />
 Default Keyword pada C++ : private
 
-public : atribut atau method bisa diakses diluar class
-protected : atribut atau method hanya bisa diakses ketika satu package atau subclass dari superclass
-private : atribut atau method hanya bisa diakses dalam class itu sendiri
+public : atribut atau method bisa diakses diluar class <br />
+protected : atribut atau method hanya bisa diakses ketika satu package atau subclass dari superclass <br />
+private : atribut atau method hanya bisa diakses dalam class itu sendiri <br />
 
-Encapsulasi : Konsep OOP dimana kita mengikat atribut didalam class dengan method yang bisa mengolah data atribut tersebut dengan tujuan untuk menghindari class lain mengakses atau melakukan modifikasi data dari class secara langsung
-Ada 2 method dalam encapsulasi, getter dan setter.
-Getter method adalah method yang melakukan return value dari atribut sebuah class
-Setter method adalah method yang akan menetapkan value atribut dengan argumen yang diterima dari method tersebut.
+Encapsulasi : Konsep OOP dimana kita mengikat atribut didalam class dengan method yang bisa mengolah data atribut tersebut dengan tujuan untuk menghindari class lain mengakses atau melakukan modifikasi data dari class secara langsung <br />
+Ada 2 method dalam encapsulasi, getter dan setter. <br />
+Getter method adalah method yang melakukan return value dari atribut sebuah class <br />
+Setter method adalah method yang akan menetapkan value atribut dengan argumen yang diterima dari method tersebut. <br />
 
-Static dalam java sesuai pengertiannya "tidak berubah" yang berarti semua objek memiliki static variabel dengan value yang sama karena static variabel atau method merupakan milik kelas bukan objek spesifik tertentu.
-TLDR : Static = milik class bukan spesifik objek 
-Static atribut hanya bisa diakses dengan static method.
-Main method pada java dibuat static supaya jvm bisa memanggil method tersebut tanpa harus menginstansiasi objek terlebih dahulu
+Static dalam java sesuai pengertiannya "tidak berubah" yang berarti semua objek memiliki static variabel dengan value yang sama karena static variabel atau method merupakan milik kelas bukan objek spesifik tertentu. <br />
+TLDR : Static = milik class bukan spesifik objek <br />
+Static atribut hanya bisa diakses dengan static method. <br />
+Main method pada java dibuat static supaya jvm bisa memanggil method tersebut tanpa harus menginstansiasi objek terlebih dahulu <br />
 
 Overloading method : 2 atau lebih method dengan nama yang sama tetapi mempunyai argumen yang berbeda-beda atau return value yang berbeda
 
 Overriding method : menimpa method dengan nama yang sama yang ada di parent class/super class  
 
-Inheritance == Warisan(Catatan Lebih lengkap bisa dilihat di CPP OOP)
-Inheritance juga berarti objek dari sebuah class "is a" object dari class yang lain
-Contoh : 
-    Superclass : Kendaraan 
-    Subclass : Car (lebih spesifik)
+Inheritance == Warisan(Catatan Lebih lengkap bisa dilihat di CPP OOP) <br />
+Inheritance juga berarti objek dari sebuah class "is a" object dari class yang lain <br />
+Contoh : <br />
+    Superclass : Kendaraan <br />
+    Subclass : Car (lebih spesifik) <br />
 
-Polymorphism == Banyak Bentuk
-Poly = Banyak, Morph = Bentuk
+Polymorphism == Banyak Bentuk <br />
+Poly = Banyak, Morph = Bentuk <br />
 
-Keyword : 
-    Final   : Atribute/Method yang memiliki keyword final tidak bisa diubah dan dioverride, 
-              tetapi bisa dioverload.
-    Public  : Atribute/Method terbuka untuk semua class dari luar
-    Private : Atribute/Method hanya bisa diakses oleh class itu sendiri
+Keyword :  <br />
+    Final   : Atribute/Method yang memiliki keyword final tidak bisa diubah dan dioverride,  <br />
+              tetapi bisa dioverload. <br />
+    Public  : Atribute/Method terbuka untuk semua class dari luar <br />
+    Private : Atribute/Method hanya bisa diakses oleh class itu sendiri <br />
 
-Ketika ada method superclass yang memiliki keyword public (bukan default), maka saat override didalam subclass,
-method subclass juga harus memiliki keyword public
-Visibility :
-    1. Jika ada method atau atribute dgn keyword public didalam superclass secara explisit alias bukan default
-       maka subclass tidak boleh mengurangi visibility dan harus mengikuti superclass (Visibility harus sama dengan superclass)
-    2. Jika ada method atau atribute dgn keyword private didalam superclass, maka subclass tidak dapat mengaksesnya.
-       Jika ingin mengakses atribut/method superclass yang private maka harus dibuat ulang di subclass
+Ketika ada method superclass yang memiliki keyword public (bukan default), maka saat override didalam subclass, <br />
+method subclass juga harus memiliki keyword public <br />
+Visibility : <br />
+    1. Jika ada method atau atribute dgn keyword public didalam superclass secara explisit alias bukan default <br />
+       maka subclass tidak boleh mengurangi visibility dan harus mengikuti superclass (Visibility harus sama dengan superclass) <br />
+    2. Jika ada method atau atribute dgn keyword private didalam superclass, maka subclass tidak dapat mengaksesnya. <br />
+       Jika ingin mengakses atribut/method superclass yang private maka harus dibuat ulang di subclass <br />
