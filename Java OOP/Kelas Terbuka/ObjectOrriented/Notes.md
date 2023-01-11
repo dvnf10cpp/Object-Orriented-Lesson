@@ -6,7 +6,7 @@ Objek adalah sebuah wujud hasil dari class
 
 Sebuah objek memiliki atribut(data member) dan method(data function)  
 
-Instansiasi adalah proses pembuatan suatu objek dari sebuah class
+Instansiasi adalah proses pembuatan suatu objek dari sebuah class__
 Contoh Student student1 = new Student();  
 
 Constructor adalah method yang pertama kali di panggil saat kita melakukan instansiasi dan nama method dari sebuah constructor adalah nama dari class itu sendiri
