@@ -7,45 +7,45 @@ public class Manusia {
     private boolean menikah;
 
     //Setter and Getter
-    String getNama(){
+    final String getNama(){
         return this.nama;
     }
 
-    void setNama(String nama){
+    final void setNama(String nama){
         this.nama = nama;
     }
 
-    boolean getJenisKelamin(){
+    final boolean getJenisKelamin(){
         return this.jenisKelamin;
     }
 
-    void setJenisKelamin(boolean jenisKelamin){
+    final void setJenisKelamin(boolean jenisKelamin){
         this.jenisKelamin = jenisKelamin;
     }
 
-    String getNik(){
+    final String getNik(){
         return this.nik;
     }
 
-    void setNik(String nik){
+    final void setNik(String nik){
         this.nik = nik;
     }
 
-    boolean getMenikah(){
+    final boolean getMenikah(){
         return this.menikah;
     }
 
-    void setMenikah(boolean menikah){
+    final void setMenikah(boolean menikah){
         this.menikah = menikah;
     }
-
+    //Contoh final tidak bisa dioverride : Bisa tambahkan 'final' pada method dibawah ini
     double getTunjangan(){
         if(this.menikah && this.jenisKelamin) return 25;
         if(this.menikah && !this.jenisKelamin) return 20;
         return 15;
     }
 
-    double getPendapatan(){
+    final double getPendapatan(){
         return this.getTunjangan() * 50;
     }
 
