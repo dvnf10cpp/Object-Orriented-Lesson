@@ -44,15 +44,15 @@ Polymorphism == Banyak Bentuk <br />
 Poly = Banyak, Morph = Bentuk <br />
 
 Keyword :  <br />
-    Final   : Atribute/Method yang memiliki keyword final tidak bisa diubah dan dioverride,  <br />
+    - Final   : Atribute/Method yang memiliki keyword final tidak bisa diubah dan dioverride,  <br />
               tetapi bisa dioverload. <br />
-    Public  : Atribute/Method terbuka untuk semua class dari luar <br />
-    Private : Atribute/Method hanya bisa diakses oleh class itu sendiri <br />
+    - Public  : Atribute/Method terbuka untuk semua class dari luar <br />
+    - Private : Atribute/Method hanya bisa diakses oleh class itu sendiri <br />
 
 Ketika ada method superclass yang memiliki keyword public (bukan default), maka saat override didalam subclass, <br />
 method subclass juga harus memiliki keyword public <br />
 Visibility : <br />
-    1. Jika ada method atau atribute dgn keyword public didalam superclass secara explisit alias bukan default <br />
+    - Jika ada method atau atribute dgn keyword public didalam superclass secara explisit alias bukan default <br />
        maka subclass tidak boleh mengurangi visibility dan harus mengikuti superclass (Visibility harus sama dengan superclass) <br />
-    2. Jika ada method atau atribute dgn keyword private didalam superclass, maka subclass tidak dapat mengaksesnya. <br />
+    -. Jika ada method atau atribute dgn keyword private didalam superclass, maka subclass tidak dapat mengaksesnya. <br />
        Jika ingin mengakses atribut/method superclass yang private maka harus dibuat ulang di subclass <br />
