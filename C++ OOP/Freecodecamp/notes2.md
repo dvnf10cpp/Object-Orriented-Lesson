@@ -26,7 +26,7 @@ Polymorphism: <br />
                 - Describes when a method signature is in both subclass and a superclass. <br />
                 - The methods share the same name but have different implementation. <br />
                 - The implementation of the subclass that the object is an instance of <br />
-                    overrides that of the superclass. <br />
+                    overrides that of the superclass. <br /> <br />
              2) Static polymorphism: <br />
                 -  Occurs during compile-time rather than during runtime. <br />
                 -  Refers to when multiply methods with the same name but different arguments <br />
