@@ -49,10 +49,20 @@ Jenis-Jenis Inheritance : <br />
 # Polymorphism
 Polymorphism == Banyak Bentuk <br />
 Poly = Banyak, Morph = Bentuk <br />
+Definisi dalam OOP : kemampuan sebuah objek, atau fungsi untuk memiliki berbagai macam bentuk.
 
-Overloading method : 2 atau lebih method dengan nama yang sama tetapi mempunyai argumen yang berbeda-beda atau return value yang berbeda
+Overloading method : 2 atau lebih method dengan nama yang sama tetapi mempunyai argumen yang berbeda-beda <br/>
+Overloading juga bisa disebut Compile Time Polymorphism, karena method dipanggil saat kompilasi. <br/>
 
-Overriding method : menimpa method dengan nama yang sama yang ada di parent class/super class  
+Overriding method : menimpa method dengan nama yang sama yang ada di parent class/super class  <br/>
+Overriding juga bisa disebut Runtime Polymorphism karena method dipanggil saat runtime <br/>
+
+Perbedaan Compile Time dan Runtime : <br/>
+Compile Time adalah Proses yang pertama kali terjadi <br/>
+Runtime adlaah Proses yang kedua setelah proses pertama <br/>
+Contoh Kasusnya adalah ketika kita run C++ source code kita memberikan source code kita ke program yang biasanya dipanggil compiler dalam contoh yang kita gunakan, compiler tersebut berupa G++. Lalu Program ini akan menghasilkan sebuah file executeable. Proses ini merupakan Compile Time. <br\>
+Saat kita menjalankan file executeable, proses inilah yang merupakan Runtime. Yang mana bisa menjelaskan Runtime error seperti user melakukan input string ke tipe data int dan sebagainya.
+
 
 # More Keyword
 Keyword :  <br />
@@ -69,3 +79,8 @@ Visibility : <br />
        maka subclass tidak boleh mengurangi visibility dan harus mengikuti superclass (Visibility harus sama dengan superclass) <br />
     - Jika ada method atau atribute dgn keyword private didalam superclass, maka subclass tidak dapat mengaksesnya. <br />
        Jika ingin mengakses atribut/method superclass yang private maka harus dibuat ulang di subclass <br />
+
+# Abstraction
+Abstraction : menyembunyikan impelementasi dengan memanfaatkan abstract class, interface dan sebagainya
+<br/>
+Abstraction Layer merupakan mekanisme yang memisahkan 2 (dua) kompleksitas sebuah sistem
