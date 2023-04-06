@@ -191,19 +191,19 @@ public:
 
 int main(){
     //constructor demo
-    Student student1 = Student("Anisa","Computer Science",23,3.76);
+    Student student1 = Student("Me1","Computer Science",23,3.76);
     // student1.intro();
 
-    Student student2 = Student("Najwa","Engineering",23,3.81);
+    Student student2 = Student("Me2","Engineering",23,3.81);
     // student2.intro();
 
-    Student student3 = Student("Vrayna","Economics",21,3.4);
-    Programmer programmer1 = Programmer("Rivaldo","Informatics",22,3.91,"C#","Game");
+    Student student3 = Student("Ma1","Economics",21,3.4);
+    Programmer programmer1 = Programmer("Mo","Informatics",22,3.91,"C#","Game");
     // programmer1.developApp();
     //Buat inheritnace menjadi public supaya bisa mengakses abstract method
     // programmer1.AskCumlaude();
 
-    Designer designer1 = Designer("Abin","Design and Art",22,3.61,"Web","Figma");
+    Designer designer1 = Designer("Mn","Design and Art",22,3.61,"Web","Figma");
     // designer1.designing();
 
 
